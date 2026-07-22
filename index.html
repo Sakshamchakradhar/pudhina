@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>for Momo 🍑</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Quicksand:wght@400;500;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===================== AMBIENT BACKGROUND ===================== -->
+<div class="bg-scene" aria-hidden="true">
+  <div class="blob blob-a"></div>
+  <div class="blob blob-b"></div>
+  <div class="blob blob-c"></div>
+  <div class="grain"></div>
+</div>
+
+<div id="floating-layer" aria-hidden="true"></div>
+<div id="cursor-glow"></div>
+<div id="cursor-trail"></div>
+
+<!-- ===================== EASTER EGG TOAST ===================== -->
+<div id="egg-toast" class="egg-toast" role="status"></div>
+
+<!-- ===================== INTRO / LANDING ===================== -->
+<section id="intro" class="screen intro-screen">
+  <div class="intro-stars" aria-hidden="true"></div>
+  <div class="intro-content">
+    <h1 class="intro-heading" id="momo-name">Hi Momo <span class="heart-pop">❤️</span></h1>
+    <p class="intro-sub typewriter-line" id="intro-line-2">I made something just for you...</p>
+    <button id="open-btn" class="btn btn-primary ripple">
+      <span>✨ Open It</span>
+    </button>
+  </div>
+</section>
+
+<!-- ===================== MAIN APP (hidden until opened) ===================== -->
+<div id="app" class="app hidden">
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">for <em>Momo</em> 🍑</div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#" data-target="home" class="active">Home</a></li>
+      <li><a href="#" data-target="letter">Letter</a></li>
+      <li><a href="#" data-target="reasons">Reasons</a></li>
+      <li><a href="#" data-target="memories">Memories</a></li>
+      <li><a href="#" data-target="sorry">Sorry</a></li>
+      <li><a href="#" data-target="promise">Promise</a></li>
+      <li><a href="#" data-target="smile">Smile</a></li>
+      <li><a href="#" data-target="final">Final</a></li>
+    </ul>
+    <button id="music-toggle" class="music-btn" aria-label="Toggle music" title="soft music">🔇</button>
+  </nav>
+
+  <!-- HOME -->
+  <section class="page active" id="home">
+    <div class="page-inner home-inner">
+      <div class="sparkle-ring" aria-hidden="true"></div>
+      <h2 class="page-title big-title">Hey you. Yes, you, Panda. 🐼</h2>
+      <p class="page-lead">Before anything else — this whole site is just for you. No big speeches, no drama. Just a few pages made with way too much love and a little too much CSS.</p>
+      <div class="home-cards">
+        <button class="mini-nav-card" data-target="letter">
+          <span class="mini-emoji">💌</span>
+          <span>Read the letter</span>
+        </button>
+        <button class="mini-nav-card" data-target="reasons">
+          <span class="mini-emoji">🌈</span>
+          <span>See the reasons</span>
+        </button>
+        <button class="mini-nav-card" data-target="memories">
+          <span class="mini-emoji">📸</span>
+          <span>Our memories</span>
+        </button>
+        <button class="mini-nav-card" data-target="smile">
+          <span class="mini-emoji">😤</span>
+          <span>Still angry?</span>
+        </button>
+      </div>
+      <p class="hint-text">psst... try clicking the moon somewhere on this site 🌙</p>
+    </div>
+  </section>
+
+  <!-- LETTER -->
+  <section class="page" id="letter">
+    <div class="page-inner">
+      <h2 class="page-title">A little letter 💌</h2>
+      <div class="letter-paper">
+        <div class="tape tape-left"></div>
+        <div class="tape tape-right"></div>
+        <p class="letter-text" data-line>Dear Maalkin,</p>
+        <p class="letter-text" data-line>I'm sorry.</p>
+        <p class="letter-text" data-line>Like, actually sorry — not the "sorry but let me explain" kind. I never wanted to hurt you, and knowing that I did has been sitting weird in my chest ever since.</p>
+        <p class="letter-text" data-line>I know you're upset. I understand why. I'm not here to argue that point or convince you otherwise — you're allowed to be exactly as annoyed at me as you are.</p>
+        <p class="letter-text" data-line>You genuinely means a lot to me. Like, "explain a running joke to a stranger and it takes twenty minutes" a lot.</p>
+        <p class="letter-text" data-line>I don't expect instant forgiveness. I'm not asking you to just get over it because I built you a website with floating hearts. I just hope this makes you smile at least once while you decide what happens next.</p>
+        <p class="letter-text" data-line>Whenever you're ready — I'll be here, being annoying, same as always.</p>
+        <p class="letter-text signature" data-line>— the person who owes you noodles 🍜</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REASONS -->
+  <section class="page" id="reasons">
+    <div class="page-inner">
+      <h2 class="page-title">Reasons you matter (a very short list) 🌟</h2>
+      <p class="page-lead">Hover the cards. They flip. It's science.</p>
+      <div class="reasons-grid">
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front"><span class="reason-emoji">💛</span></div>
+            <div class="flip-back">Because you're my favorite Aloo. The only one. There's no second Aloo ka paratha.</div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front"><span class="reason-emoji">🌸</span></div>
+            <div class="flip-back">Because your smile fixes bad days like it's got a warranty on it.</div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front"><span class="reason-emoji">🍜</span></div>
+            <div class="flip-back">Because life is funnier with you around. Everything's a bit blander without your commentary.</div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front"><span class="reason-emoji">🐼</span></div>
+            <div class="flip-back">Because you're impossible to replace. I checked. There is no replacement pudhina in stock.</div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front"><span class="reason-emoji">🌈</span></div>
+            <div class="flip-back">Because you're one of the most important people in my life, quietly, consistently, always.</div>
+          </div>
+        </div>
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front"><span class="reason-emoji">✨</span></div>
+            <div class="flip-back">Because I miss talking normally with you. The everyday, nothing-special kind of talking.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMORIES -->
+  <section class="page" id="memories">
+    <div class="page-inner">
+      <h2 class="page-title">Our scrapbook 📖</h2>
+      <p class="page-lead">No real photos, just doodles — imagination will have to do.</p>
+      <div class="scrapbook">
+        <div class="polaroid" style="--r:-6deg">
+          <div class="polaroid-img doodle-1"></div>
+          <p>You sharing abt your day & ups and downs 🌸</p>
+        </div>
+        <div class="polaroid" style="--r:4deg">
+          <div class="polaroid-img doodle-2"></div>
+          <p>laughing over absolutely nothing 😂</p>
+        </div>
+        <div class="polaroid" style="--r:-3deg">
+          <div class="polaroid-img doodle-3"></div>
+          <p>food plans that mostly stayed plans 🍜</p>
+        </div>
+        <div class="polaroid" style="--r:5deg">
+          <div class="polaroid-img doodle-4"></div>
+          <p>sharing songs at 11pm 🎧</p>
+        </div>
+        <div class="polaroid" style="--r:-4deg">
+          <div class="polaroid-img doodle-5"></div>
+          <p>sending random reels with zero context 📸</p>
+        </div>
+        <div class="polaroid" style="--r:3deg">
+          <div class="polaroid-img doodle-6"></div>
+          <p>tiny moments that quietly became memories ☕</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SORRY -->
+  <section class="page" id="sorry">
+    <div class="page-inner">
+      <h2 class="page-title">Sticky notes of sorry 🗒️</h2>
+      <div class="notes-board">
+        <div class="sticky-note note-1"><p>💌 I'm really sorry.</p></div>
+        <div class="sticky-note note-2"><p>💌 I should've handled things better.</p></div>
+        <div class="sticky-note note-3"><p>💌 You deserved better.</p></div>
+        <div class="sticky-note note-4"><p>💌 I miss annoying you.</p></div>
+        <div class="sticky-note note-5"><p>💌 Please don't stay mad forever.</p></div>
+        <div class="sticky-note note-6"><p>💌 Even if you're still angry, I wanted you to know I care.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section class="page" id="promise">
+    <div class="page-inner">
+      <h2 class="page-title">I promise 🌼</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot">🌼</div>
+          <p>To listen more.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">🌼</div>
+          <p>To understand better.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">🌼</div>
+          <p>To annoy you only within healthy limits.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">🌼</div>
+          <p>To respect your feelings.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">🌼</div>
+          <p>To keep making you laugh.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot">🌼</div>
+          <p>To appreciate our friendship, out loud, more often.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMILE -->
+  <section class="page" id="smile">
+    <div class="page-inner smile-inner">
+      <h2 class="page-title">Still mad? Prove it. 😤</h2>
+      <p class="page-lead">Press the button. See what happens. (Nothing bad, I promise.)</p>
+      <button id="angry-btn" class="btn btn-primary ripple">Press when you're still angry 😤</button>
+      <div id="smile-message" class="smile-message"></div>
+      <div id="emoji-burst" class="emoji-burst" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section class="page" id="final">
+    <div class="page-inner final-inner">
+      <div class="night-sky" aria-hidden="true">
+        <div class="stars-layer"></div>
+        <div class="constellation" id="constellation"></div>
+      </div>
+      <div class="final-content">
+        <p class="type-line" data-final>Thank you for being you, Momo.</p>
+        <p class="type-line" data-final>I'm genuinely sorry.</p>
+        <p class="type-line" data-final>I'll wait until you're ready.</p>
+        <p class="type-line" data-final>No pressure.</p>
+        <p class="type-line" data-final>Just remember...</p>
+        <p class="type-line" data-final>Our Relationship means a lot to me.</p>
+        <p class="type-line final-heart" data-final>❤️</p>
+        <button id="final-btn" class="btn btn-glow ripple hidden">Can we be okay again?</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<canvas id="confetti-canvas"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
